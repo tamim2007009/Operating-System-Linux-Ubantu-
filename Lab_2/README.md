@@ -139,3 +139,7 @@ done
 ```
 
 </details>
+
+<details>
+   <summary>Delete all files and folders of current directory without a specific file type (E.g. shell scripts) </summary>
+
