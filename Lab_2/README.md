@@ -189,5 +189,19 @@ do
     fi  
 done
 ```
+ <summary>
+    Delete All Files Except Text Files 
+ </summary>
 
+```bash
+for i in $(ls)
+do
+    if [[ "$i" != *.txt ]]; then
+        rm -r "$i"
+    fi
+done
+
+
+```
+ 
   
