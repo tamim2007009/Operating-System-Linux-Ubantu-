@@ -196,8 +196,8 @@ done
 ```bash
 for i in $(ls)
 do
-    if [[ "$i" != *.txt ]]; then
-        rm -r "$i"
+    if [[ $i != *.txt ]]; then
+        rm -r $i
     fi
 done
 
