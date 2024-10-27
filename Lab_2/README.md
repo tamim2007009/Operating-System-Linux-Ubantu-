@@ -143,3 +143,50 @@ done
 <details>
    <summary>Delete all files and folders of current directory without a specific file type (E.g. shell scripts) </summary>
 
+
+<details>
+   <summary>
+      Write a Bash script that prints the numbers from 1 to 100, but with the following conditions:
+
+For multiples of 3, print "Fizz" instead of the number.
+For multiples of 5, print "Buzz" instead of the number.
+For multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+For numbers that are prime, print "Prime" instead of the number.
+For all other numbers, print the number itself.
+</summary>
+
+
+```bash
+
+# Function to check if a number is prime
+is_prime() {
+    local n=$1  # Remove the space around `=`
+    if (( n < 2 )); then
+        return 1  # Not prime
+    fi
+    for (( i=2; i*i<=n; i++ )); do
+        if (( n % i == 0 )); then
+            return 1  # Not prime
+        fi
+    done
+    return 0  # Prime
+}
+
+# Loop from 1 to 100
+for x in {1..100}
+do
+    if (( x % 3 == 0 && x % 5 == 0 )); then
+        echo "FizzBuzz"
+    elif (( x % 3 == 0 )); then
+        echo "Fizz (Multiple of three): $x"
+    elif (( x % 5 == 0 )); then
+        echo "Buzz (Multiple of five): $x"
+    elif is_prime "$x"; then
+        echo "Prime: $x"
+    else
+        echo "The number is $x"
+    fi  
+done
+```
+
+   </details>
