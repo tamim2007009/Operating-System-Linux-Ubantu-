@@ -107,7 +107,7 @@ done
 
 ### Problems
 
-<details>
+
    <summary>Delete all files and folders of current directory using rm and rmdir but don't delete the running shell script</summary>
 
 ```bash
@@ -126,7 +126,7 @@ do
 done
 ```
 
-</details>
+
 
 ```bash
 for i in $(ls)
@@ -138,21 +138,22 @@ do
 done
 ```
 
-</details>
 
-<details>
+
    <summary>Delete all files and folders of current directory without a specific file type (E.g. shell scripts) </summary>
 
 
-<details>
+
    <summary>
       Write a Bash script that prints the numbers from 1 to 100, but with the following conditions:
 
-For multiples of 3, print "Fizz" instead of the number.
-For multiples of 5, print "Buzz" instead of the number.
-For multiples of both 3 and 5, print "FizzBuzz" instead of the number.
-For numbers that are prime, print "Prime" instead of the number.
-For all other numbers, print the number itself.
+ <ul>
+      <li>For multiples of 3, print "Fizz" instead of the number.</li>
+      <li>For multiples of 5, print "Buzz" instead of the number.</li>
+      <li>For multiples of both 3 and 5, print "FizzBuzz" instead of the number.</li>
+      <li>For numbers that are prime, print "Prime" instead of the number.</li>
+      <li>For all other numbers, print the number itself.</li>
+   </ul>
 </summary>
 
 
@@ -189,4 +190,4 @@ do
 done
 ```
 
-   </details>
+  
