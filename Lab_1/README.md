@@ -34,4 +34,5 @@
 | `clear`                | Clears the terminal screen.                                       |
 | `reboot`               | Reboots the system.                                               |
 | `shutdown now`         | Shuts down the system immediately.                                |
+| `rm -r`         | remove both file as well as directory                              |
 
