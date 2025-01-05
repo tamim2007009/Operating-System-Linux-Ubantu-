@@ -1,5 +1,5 @@
 
-make 
-make qemu
-proccount
-rrtest
+# make 
+# make qemu
+# proccount
+# rrtest
